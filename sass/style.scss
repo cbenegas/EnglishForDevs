@@ -1,0 +1,253 @@
+@import "variables";
+
+/*    =========== 
+       GENERICOS   
+      =========== */
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.fs-greater{
+    font-size: 1.5rem;
+}
+
+.fs-medium {
+    font-size: 1.3rem;
+}
+
+.fs-superGreat {
+    font-size: 2.5rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.text-decoration-none{
+    text-decoration: none !important;
+}
+
+.br-20{
+    border-radius: 20px;
+}
+
+.border-none {
+    border: none
+}
+
+.bkg-colorfull{
+    background-color:  map-get($color, hover-bkg);
+}
+
+.strikethrough{
+    text-decoration: line-through;
+}
+
+.color-principal1{
+    color:map-get($color, principal1) !important;
+}
+.color-principal2{
+    color:map-get($color, principal2) !important    ;
+}
+
+.hover-button:hover{
+    background-color: map-get($color, hover-bkg);
+    color: map-get($color, hover-text);
+}
+
+.my-center{
+    margin-top: 2rem;
+}
+
+.my-section {
+    margin-top: 5rem;
+}
+
+/*    =========== 
+       ESPECIFICOS   
+      =========== */
+#nav {
+    background-color: map-get($color, principal2);
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    color: map-get($color,text);
+}
+
+.letter-logo {
+    font-family: map-get($font, letter-logo);
+    font-size: 2.5rem;
+}
+
+.number-logo {
+    font-family: map-get($font, number-logo);
+    font-size: 2rem;
+    color: map-get($color, principal1);
+}
+
+.button {
+    background-color:map-get($color, principal1);
+    color: map-get($color, text);
+    display: inline-block;
+    align-self: center;
+    text-decoration: none;
+}
+
+.material-icons {
+    font-size: 3rem;
+    margin: .8rem;
+    color: map-get($color, principal2);
+    animation-name: rotate_icon;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+
+.icon-container {
+    border-radius: 50%;
+    background-color:map-get($color, bkg-icon);
+    text-align: center;
+    width: max-content;
+    height: max-content;
+}
+
+h1 {
+    font-size: 2.5rem
+}
+
+h2 {
+    font-size: 2.3rem;
+    font-family: map-get($font, text);
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-family: map-get($font, text);
+}
+
+main {
+    background-color: map-get($color, bkg-body);
+}
+
+img {
+    width: 100%
+}
+
+.card-body {
+    background-color: rgb(30,30,30);
+}
+
+.background-container {
+    background-color: map-get($color, bkg-body);
+}
+
+.grid-container {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(max-content, 3);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "answer"
+      "image"
+      "image" 
+      "makeTest";
+}
+
+.image { 
+    grid-area: image;
+    display: grid;
+    align-content: center;
+}
+
+.makeTest { 
+    grid-area: makeTest; 
+    justify-content: start ; 
+}
+
+.answer { 
+    grid-area: answer; 
+    align-items: center;
+}
+
+.card-margin{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.logo-title{
+    font-family: 'Alata', sans-serif;
+    color:map-get($color, principal1);
+    font-size: 1.2rem;
+}
+
+.card-height{
+    height: max-content;
+}
+
+.card-bkg-color{
+    background-color: map-get($color, bkg-card);
+}
+
+.ask-style {
+    background-color: map-get($color, bkg-body) !important;
+    color:map-get($color, text);
+    font-weight: bold;
+}
+
+.button-empezar-ya{
+    background-color: map-get($color, principal2);
+    color: map-get($color, text);
+    display: inline-block;
+    align-self: center;
+    text-decoration: none;
+}
+
+.hover-empezar-ya:hover{
+    background-color: map-get($color, hover-bkg);
+    color:map-get($color, principal2);
+    font-weight: bold;
+}
+
+.footer-text {
+    font-family: map-get($font, number-logo);
+    font-size: 2rem;
+}
+
+@keyframes rotate_icon {
+    0%{ transform: rotate(0deg);}
+    10%{ transform: rotate(90deg);}
+    20%{ transform: rotate(180deg);}
+    30%{ transform: rotate(270deg);}
+    40%{ transform: rotate(360deg);}
+    100%{ transform: rotate(360deg);}
+}
+
+@media screen and (min-width: 992px){
+    .grid-container {  
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.7fr 1.3fr;
+        grid-template-areas:
+          "image answer"
+          "image makeTest";
+    }
+    
+    .card-height{
+        height: 100%;
+    }
+
+    .card-margin{
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+    .my-center{
+        margin-top: 50%;
+    }
+}

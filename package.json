@@ -1,0 +1,23 @@
+{
+  "name": "english4devs",
+  "version": "1.0.0",
+  "description": "Trabajo Final - Desarrollo Web - CoderHOuse",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss sass/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "keywords": [
+    "english",
+    "developers",
+    "work",
+    "world",
+    "interview"
+  ],
+  "author": "Cristian Benegas",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

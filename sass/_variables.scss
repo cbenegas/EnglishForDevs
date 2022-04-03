@@ -1,0 +1,26 @@
+
+/* ----------->> COLORES <<-------------
+   ------------------------------------- */
+$color:(
+    principal1: rgb(182, 3, 3),
+    principal2: rgb(2, 2, 100),
+    bkg-body: rgb(30,30,30),
+    bkg-card: rgb(56, 56, 56),
+    hover-bkg:yellowgreen,
+    hover-text: black,
+    text: white,
+    bkg-icon: yellowgreen,
+);
+
+
+/* ----------->> FUENTES <<-------------
+   ------------------------------------- */
+$gorditas: 'Gorditas', cursive;
+$rammetto: 'Rammetto One', cursive;
+$alata: 'Alata', sans-serif;
+
+$font:(
+    letter-logo: $gorditas,
+    number-logo: $rammetto,
+    text: $alata,
+);

@@ -1,0 +1,206 @@
+/* ----------->> COLORES <<-------------
+   ------------------------------------- */
+/* ----------->> FUENTES <<-------------
+   ------------------------------------- */
+/*    =========== 
+       GENERICOS   
+      =========== */
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: white;
+  text-decoration: none; }
+
+.fs-greater {
+  font-size: 1.5rem; }
+
+.fs-medium {
+  font-size: 1.3rem; }
+
+.fs-superGreat {
+  font-size: 2.5rem; }
+
+.bold {
+  font-weight: bold; }
+
+.text-decoration-none {
+  text-decoration: none !important; }
+
+.br-20 {
+  border-radius: 20px; }
+
+.border-none {
+  border: none; }
+
+.bkg-colorfull {
+  background-color: yellowgreen; }
+
+.strikethrough {
+  text-decoration: line-through; }
+
+.color-principal1 {
+  color: #b60303 !important; }
+
+.color-principal2 {
+  color: #020264 !important; }
+
+.hover-button:hover {
+  background-color: yellowgreen;
+  color: black; }
+
+.my-center {
+  margin-top: 2rem; }
+
+.my-section {
+  margin-top: 5rem; }
+
+/*    =========== 
+       ESPECIFICOS   
+      =========== */
+#nav {
+  background-color: #020264; }
+
+.nav-link {
+  font-size: 1.5rem;
+  color: white; }
+
+.letter-logo {
+  font-family: "Gorditas", cursive;
+  font-size: 2.5rem; }
+
+.number-logo {
+  font-family: "Rammetto One", cursive;
+  font-size: 2rem;
+  color: #b60303; }
+
+.button {
+  background-color: #b60303;
+  color: white;
+  display: inline-block;
+  align-self: center;
+  text-decoration: none; }
+
+.material-icons {
+  font-size: 3rem;
+  margin: .8rem;
+  color: #020264;
+  animation-name: rotate_icon;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+  animation-delay: 2s; }
+
+.icon-container {
+  border-radius: 50%;
+  background-color: yellowgreen;
+  text-align: center;
+  width: max-content;
+  height: max-content; }
+
+h1 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 2.3rem;
+  font-family: "Alata", sans-serif; }
+
+h4 {
+  font-size: 1.4rem;
+  font-family: "Alata", sans-serif; }
+
+main {
+  background-color: #1e1e1e; }
+
+img {
+  width: 100%; }
+
+.card-body {
+  background-color: #1e1e1e; }
+
+.background-container {
+  background-color: #1e1e1e; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(max-content, 3);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "answer" "image" "image"  "makeTest"; }
+
+.image {
+  grid-area: image;
+  display: grid;
+  align-content: center; }
+
+.makeTest {
+  grid-area: makeTest;
+  justify-content: start; }
+
+.answer {
+  grid-area: answer;
+  align-items: center; }
+
+.card-margin {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.logo-title {
+  font-family: 'Alata', sans-serif;
+  color: #b60303;
+  font-size: 1.2rem; }
+
+.card-height {
+  height: max-content; }
+
+.card-bkg-color {
+  background-color: #383838; }
+
+.ask-style {
+  background-color: #1e1e1e !important;
+  color: white;
+  font-weight: bold; }
+
+.button-empezar-ya {
+  background-color: #020264;
+  color: white;
+  display: inline-block;
+  align-self: center;
+  text-decoration: none; }
+
+.hover-empezar-ya:hover {
+  background-color: yellowgreen;
+  color: #020264;
+  font-weight: bold; }
+
+.footer-text {
+  font-family: "Rammetto One", cursive;
+  font-size: 2rem; }
+
+@keyframes rotate_icon {
+  0% {
+    transform: rotate(0deg); }
+  10% {
+    transform: rotate(90deg); }
+  20% {
+    transform: rotate(180deg); }
+  30% {
+    transform: rotate(270deg); }
+  40% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@media screen and (min-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr 1.3fr;
+    grid-template-areas: "image answer" "image makeTest"; }
+  .card-height {
+    height: 100%; }
+  .card-margin {
+    margin-top: 0rem;
+    margin-bottom: 0rem; }
+  .my-center {
+    margin-top: 50%; } }
