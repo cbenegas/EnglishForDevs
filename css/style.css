@@ -63,7 +63,9 @@
 
 .nav-link {
   font-size: 1.5rem;
-  color: white; }
+  color: white !important; }
+  .nav-link:hover {
+    color: #b60303 !important; }
 
 .letter-logo {
   font-family: "Gorditas", cursive;
